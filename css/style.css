@@ -110,6 +110,7 @@ p {
     display: grid;
     align-items: center;
     box-shadow: 0 3px 9px rgba(0, 0, 0, 0.05);
+    display: block;
 }
 .header-sticky {
     position: sticky;
@@ -120,8 +121,7 @@ p {
 }
 .nav-fixed {
     background-color: #fff;
-    padding: 0;
-    align-items: center;
+    display: block;
     border-bottom: none;
     height: 70px;
     box-shadow: 0 3px 6px 0 rgba(0, 0, 0, 0.05);
@@ -222,10 +222,9 @@ p {
 
 /* CAROUSEL */
 
-#carouselStudy .carousel-inner {
+.carousel-slide {
     position: relative;
 }
-
 .carousel-item img {
     filter: brightness(75%)
 }
@@ -259,28 +258,28 @@ p {
     border: none;
     transition: all .25s;
 }
-
+#carouselStudy .carousel-indicators {
+    position: absolute;
+    bottom: 100px;
+    right: 10px;
+    margin-top: 0;
+    background: none;
+}
 .carousel-caption .carousel-info button:hover {
     background: #ff6e65;
     color: #fff;
 }
 
-#carouselStudy .carousel-indicators {
-    position: absolute;
-    bottom: 100px;
-    right: 20;
-    background: none;
-}
-
-#carouselStudy .carousel-indicators li {
+#carouselStudy .owl-dots  {  
     width: 12px;
     height: 12px;
     border-radius: 50%;
+    margin: 5px 2px;
     background-color: #fff;
-
+    display: block;
 }
 
-#carouselStudy .carousel-indicators li:hover {
+#carouselStudy .carousel-indicators .owl-dots.active, #carouselStudy .carousel-indicators .owl-dots:hover {
     background-color: #ff6e65;
 }
 
@@ -688,6 +687,9 @@ p {
     line-height: 24px;
     color: #cecece;
 }
+.footer .footer-archive {
+    padding-right: 20px;
+}
 .footer .footer-archive ul li, .footer .footer-categories ul li {
     list-style: none;
 }
@@ -732,11 +734,7 @@ p {
     margin-top: 10px;
     padding: 10px 0;
 }
-/* .footer .footer-title p {
-    font-size: 14px;
-    line-height: 24px;
-    color: #cecece;
-} */
+
 .footer .footer-address {
     color: #cecece;
     line-height: 25px;
@@ -745,6 +743,7 @@ p {
 }
 .footer .footer-about {
     border-left: 1px solid rgb(64 73 82 / 51%);
+    padding-left: 50px;
 }
 .footer .footer-social {
     margin-top: 1.2em;
