@@ -263,7 +263,6 @@ p {
     bottom: 100px;
     right: 10px;
     margin-top: 0;
-    background: none;
 }
 .carousel-caption .carousel-info button:hover {
     background: #ff6e65;
@@ -276,7 +275,6 @@ p {
     border-radius: 50%;
     margin: 5px 2px;
     background-color: #fff;
-    display: block;
 }
 
 #carouselStudy .carousel-indicators .owl-dots.active, #carouselStudy .carousel-indicators .owl-dots:hover {
