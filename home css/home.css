@@ -264,17 +264,18 @@ p {
     background-size: cover;
     min-height: 90vh;
 }
-.landing__text h5{
+.landing__text {
+    max-width: 600px;
+    padding-top: 200px;
+    
+}
+.landing__text h5 {
     font-size: 70px;
     line-height: 80px;
     font-weight: bold;
-    color: white;
-    margin-right: 600px;
-    padding-top: 100px;
+    color: #fff;
 }
-.landingCarousel__info2 h5{
-    margin-right: 400px;
-}
+
 .carousel__btn {
     font-weight: 600;
     font-size: 16px;
@@ -303,9 +304,6 @@ p {
     background: none;
     
    
-}
-.landingText__position2 h5{
-    margin-right: 550px;
 }
 
 .owl-theme .owl-dots .owl-dot{
@@ -909,6 +907,10 @@ p {
         margin-top: 16px;
         box-shadow: 0 6px 19px rgba(0, 0, 0, 0.05);
     }
+    .landing__text h5 {
+        font-size: 50px;
+        line-height: 60px;
+    }
     .number .counter {
         border-right: none;
     }
@@ -922,5 +924,12 @@ p {
     .text-info .footer-about {
         border-left: none;
         padding-left: 10px;
+    }
+}
+
+@media screen and (max-width: 767px) {
+    .landing__text h5 {
+        font-size: 45px;
+        line-height: 55px;
     }
 }
