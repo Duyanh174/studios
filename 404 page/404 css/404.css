@@ -1,5 +1,148 @@
-*{
-    margin: 0;
+/* GLOBAL */
+
+* {
     padding: 0;
+    margin: 0;
     box-sizing: border-box;
+}
+
+html,
+body {
+    font-family: 'Montserrat', sans-serif;
+    line-height: 1.5;
+}
+
+.container {
+
+    width: 100%;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+
+.title-heading {
+    max-width: 700px;
+}
+
+.title-main {
+    font-size: 40px;
+    line-height: 50px;
+    font-weight: 600;
+    position: relative;
+}
+
+.title-main span {
+    color: #ff6e65;
+}
+
+.title-main::before {
+    content: "";
+    background: #707070;
+    width: 60px;
+    height: 2px;
+    position: absolute;
+    left: -20px;
+    bottom: -8px;
+    right: 0;
+    margin: 0 auto;
+}
+
+.title-main::after {
+    content: "";
+    background: #707070;
+    width: 60px;
+    height: 2px;
+    position: absolute;
+    left: 20px;
+    bottom: -15px;
+    right: 0;
+    margin: 0 auto;
+}
+
+p {
+    font-size: 16px;
+    line-height: 28px;
+    letter-spacing: .4px;
+    color: #707070;
+}
+
+/* BANNER */
+
+.banner__content {
+    background-repeat: no-repeat;
+    background-position: bottom;
+    background-size: cover;
+    min-height: 100vh;
+    position: relative;
+    z-index: 1;
+    padding: 70px 0;
+    display: flex;
+    align-items: center;
+}
+.banner__content::before {
+    content: "";
+    background: linear-gradient(75deg, rgb(16 16 16 / 62%) 10%, rgb(230 2 100 / 0%));
+    position: absolute;
+    top: 0;
+    min-height: 100%;
+    left: 0;
+    right: 0;
+    z-index: -1;
+}
+.banner .error-404 {
+    max-width: 500px;
+}
+.banner .error-404 h2 {
+    font-size: 160px;
+    color: #fff;
+    line-height: 1;
+    font-weight: 500;
+}
+.banner .banner-title {
+    font-size: 24px;
+    font-weight: 300;
+    color: #fff;
+}
+.banner .banner-item {
+    margin: 1.5rem 0 0;
+}
+.banner .search {
+    position: relative;
+}
+.banner .search .search-input {
+    padding: 10px 58px 10px 20px;
+    font-size: 16px;
+    color: #060606;
+    border: 2px solid rgb(255 255 255 / 29%);
+    border-radius: 35px;
+    background: #fff;
+    width: calc(100% - 40px);
+    margin: auto;
+    line-height: 36px;
+    outline: none;
+}
+
+.banner .search button {
+    border: none;
+    color: #ff6e65;
+    line-height: 2;
+    background: none;
+    position: absolute;
+    right: 10%;
+    padding: 18px 18px;
+    font-size: 16px;
+}
+.banner .user-action .btn-signup a {
+    background: none;
+    border-radius: 35px;
+    color: #eee;
+    display: inline-block;
+    margin-top: 50px;
+    font-weight: 600;
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    transition: all .5s;
+}
+.banner .user-action .btn-signup a:hover {
+    color: #ff6e65;
 }
