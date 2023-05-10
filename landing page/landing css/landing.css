@@ -336,7 +336,7 @@ header{
  .skill__item i{
     font-size: 45px;
     color: #fff;
-    padding-left: 65px;
+    
  }
  .box__skill1{
     padding: 40px 35px;
@@ -375,6 +375,9 @@ header{
  }
 
  /* LANDING WELCOME  */
+ .landingContact  {
+    padding-bottom: 0 !important;
+ }
  .landingWelcome{
     margin-top: 60px;
  }
@@ -395,7 +398,7 @@ header{
     height: 70px;
     line-height: 70px;
     border-radius: 50%;
-    margin: 0 0 20px 140px;
+   
  }
  .welcomeCard a{
     text-decoration: none;
@@ -403,6 +406,7 @@ header{
  .welcomeCard a:hover h5{
     color: #ff6e65;
  }
+ 
 
 
  /* LANDING SERVICE  */
@@ -685,6 +689,7 @@ header{
     border-radius: 8px 0px 0px 8px;
     height: 55px;
     border: 1px solid rgb(255 255 255 / 20%);
+    margin-bottom: 0;
 }
 .form__button{
     background: #4867b0;
@@ -780,7 +785,7 @@ header{
  .four__contact{
     border-left: 1px solid rgb(64 73 82 / 51%);
     padding-left: 30px;
-    margin-right: -90px;
+    margin-right: 0;
  }
 .four__contact p{
     font-size: 14px;
@@ -853,5 +858,3 @@ header{
     opacity: 1;
     border: 1px transparent;
 }
-
-
