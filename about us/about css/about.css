@@ -57,7 +57,12 @@ header{
 }
 /* NAV BAR  */
 .aboutNavbar{
-    position: sticky fixed ;
+    position: sticky  ;
+    top: 0;
+    right: 0;
+    left: 0;
+    z-index: 8;
+    background-color: #161c2d;
 }
 .button__searching{
     position: relative;
@@ -633,4 +638,33 @@ div#runvideo iframe{
     color: white;
 }
 
+/* BACK TO TOP  */
+.backToTop  {
+    width: 40px;
+    height: 40px;
+    background-color: #1a2338;
+    border-radius: 8px;
+    line-height: 40px;
+    text-align: center;
+    display: block;
+    position: fixed;
+    right: 15px;
+    bottom: 90px;
+    color: white;
+    transition: all 0.5s;
+    visibility: hidden;
+    opacity: 0;
+    font-size: 16px;
+   
+    
+}
+.backToTop:hover{
+    opacity: .8;
+    color: white;
+}
 
+.cd-top--is-visible{
+    visibility: visible;
+    opacity: 1;
+    border: 1px transparent;
+}

@@ -544,7 +544,7 @@ header{
  .four__contact{
     border-left: 1px solid rgb(64 73 82 / 51%);
     padding-left: 30px;
-    margin-right: -90px;
+    margin-right: 0;
  }
 .four__contact p{
     font-size: 14px;
