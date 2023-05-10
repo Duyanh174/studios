@@ -1,5 +1,172 @@
-*{
-    margin: 0;
+/* GLOBAL */
+
+* {
     padding: 0;
+    margin: 0;
     box-sizing: border-box;
+}
+
+html,
+body {
+    font-family: 'Montserrat', sans-serif;
+    line-height: 1.5;
+}
+
+.container {
+
+    width: 100%;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+
+.title-heading {
+    max-width: 700px;
+}
+
+.title-main {
+    font-size: 40px;
+    line-height: 50px;
+    font-weight: 600;
+    position: relative;
+}
+
+.title-main span {
+    color: #ff6e65;
+}
+
+.title-main::before {
+    content: "";
+    background: #707070;
+    width: 60px;
+    height: 2px;
+    position: absolute;
+    left: -20px;
+    bottom: -8px;
+    right: 0;
+    margin: 0 auto;
+}
+
+.title-main::after {
+    content: "";
+    background: #707070;
+    width: 60px;
+    height: 2px;
+    position: absolute;
+    left: 20px;
+    bottom: -15px;
+    right: 0;
+    margin: 0 auto;
+}
+
+p {
+    font-size: 16px;
+    line-height: 28px;
+    letter-spacing: .4px;
+    color: #707070;
+}
+
+/* BANNER */
+
+.banner__inner {
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    min-height: 300px;
+    position: relative;
+    z-index: 1;
+}
+.banner__inner::before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: rgb(8 8 8 / 14%);
+    z-index: -1;
+}
+.banner {
+    display: block;
+    margin: 0 auto;
+    z-index: 100;
+    padding-top: 120px;
+    z-index: 99; 
+}
+ul.banner-icon {
+    position: relative;
+    display: inline-block;
+    vertical-align: middle;
+    font-size: 15px;
+    text-transform: capitalize;
+    color: #d4d4d4;
+}
+.banner-icon {
+    text-align: center;
+    display: inline-block;
+}
+ul.banner-icon a {
+    color: #fff;
+    opacity: .8;
+    text-decoration: none; 
+    transition: all .5s; 
+}
+ul.banner-icon a:hover {
+    opacity: 1;
+}
+ul.banner-icon li {
+    list-style: none;
+}
+
+/* CONTACT */
+
+.cont-left i {
+    color: #ff6e65;
+    font-size: 20px;
+}
+.cont-right h6 {
+    font-size: 18px;
+    font-weight: 600;
+    line-height: 18px;
+    margin-bottom: 8px;
+}
+.cont-right a {
+    text-decoration: none;
+    color: #707070;
+}
+.map-iframe iframe {
+    border: 10px solid #fff;
+    box-shadow: 0px 5px 10px 0px rgb(0 0 0 / 6%);
+    max-width: 100%;
+}
+.contact-left img {
+    border-radius: 8px;
+}
+.contact-block input, .contact-block textarea {
+    width: 100%;
+    color: #060606;
+    background: #f9f9f9;
+    font-size: 15px;
+    padding: 14px;
+    border: 1px solid #eee;
+    outline: none;
+    margin-bottom: 16px;
+    border-radius: 8px;
+}
+.contact-block textarea {
+    height: 120px;
+    margin: 0 0 20px 0;
+}
+.contact-block .btn-style {
+    background: #ff6e65;
+    color: #fff;
+    padding: 14px 30px;
+    font-weight: 600;
+    font-size: 16px;
+    border-radius: 4px;
+    border: none;
+    transition: all .25s ease-in-out;
+}
+.contact-block .btn-style:hover {
+    background: #0d369f;
+}
+.contact-form .title-heading {
+    max-width: 900px;
 }
